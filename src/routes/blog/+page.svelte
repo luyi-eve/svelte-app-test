@@ -1,4 +1,6 @@
 <script>
+	// import { base } from '$app/paths';
+
 	import BlurFade from '$lib/components/magic/BlurFade.svelte';
 	import ProjectCard from '$lib/components/portfolio/ProjectCard.svelte';
 	import Badge from '$lib/components/ui/badge/badge.svelte';

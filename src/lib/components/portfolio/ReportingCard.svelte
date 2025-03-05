@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths'; // Import base path for image
+
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { marked } from 'marked';
@@ -18,7 +20,7 @@
 <li class="relative ml-1 py-4 flex">
     <div class="flex items-start">
         <Avatar.Root class="m-auto border" style="margin-right:20px; border-radius: 0; width: 100px; height: 100px;">
-            <img src={image} alt={title} class="object-contain" />
+			<img src="{base}{image}" alt={title} class="object-contain" />
             <!-- <Avatar.Fallback>{title[0]}</Avatar.Fallback> -->
         </Avatar.Root>
         <div class="flex flex-1 flex-col justify-start gap-1 ml-4">

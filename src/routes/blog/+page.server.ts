@@ -1,3 +1,4 @@
+
 import type { Post } from '$lib/types';
 
 export async function load({ fetch }) {
@@ -6,3 +7,5 @@ export async function load({ fetch }) {
 	// console.log( posts, 'Response');
 	return { posts };
 }
+
+// export const prerender = true;

@@ -39,7 +39,8 @@ export let DATA = {
 			},
 			GitHub: {
 				name: 'GitHub',
-				url: 'https://github.com/luyi-eve',
+				url:'',
+				// url: 'https://github.com/luyi-eve',
 				// // icon: Icons.github,
 				icon: GithubSvg,
 				navbar: true,
@@ -47,7 +48,8 @@ export let DATA = {
 			},
 			LinkedIn: {
 				name: 'LinkedIn',
-				url: 'www.linkedin.com/in/luyi-eve',
+				url:'',
+				// url: 'www.linkedin.com/in/luyi-eve',
 				// // icon: Icons.linkedin,
 				icon: LinkedinSvg,
 				navbar: true,
@@ -55,7 +57,8 @@ export let DATA = {
 			},
 			X: {
 				name: 'X',
-				url: 'https://x.com/luyi_2021',
+				url:'',
+				// url: 'https://x.com/luyi_2021',
 				// // icon: Icons.x,
 				icon: TwitterSvg,
 				navbar: true,
@@ -83,7 +86,7 @@ export let DATA = {
 					icon: Globe
 				}
 			],
-			image: '/src/lib/data/images/tampabay-most-common-artists-3.png',
+			image: '/images/tampabay-most-common-artists-3.png',
 			video: ''
 		},
 		{
@@ -98,7 +101,7 @@ export let DATA = {
 				'Datawrapper',
 			],
 			links: [],
-			image: '/src/lib/data/images/sst-anomaly-2024.gif',
+			image: '/images/sst-anomaly-2024.gif',
 			video: ''
 		},
 		{
@@ -136,7 +139,7 @@ export let DATA = {
 					// icon: <Icons.github className="size-3" />,
 				}
 			],
-			image: '/src/lib/data/images/fl-abortion-costs-small.gif',
+			image: '/images/fl-abortion-costs-small.gif',
 			video: ''
 		},
 		{
@@ -159,7 +162,7 @@ export let DATA = {
 				// 	// icon: <Icons.globe className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/gaza-aid-route.jpg',
+			image: '/images/gaza-aid-route.jpg',
 			video: ''
 		},
 		{
@@ -181,7 +184,7 @@ export let DATA = {
 				// 	// icon: <Icons.globe className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/singapore-political-gender-imbalance.png',
+			image: '/images/singapore-political-gender-imbalance.png',
 			video: ''
 		},
 		{
@@ -203,7 +206,7 @@ export let DATA = {
 					// icon: <Icons.globe className="size-3" />,
 				},
 			],
-			image: '/src/lib/data/images/gaza-killed-journalist-database.png',
+			image: '/images/gaza-killed-journalist-database.png',
 			video: ''
 		},
 		{
@@ -225,7 +228,7 @@ export let DATA = {
 				// 	// icon: <Icons.globe className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/prison-phone-rates.png',
+			image: '/images/prison-phone-rates.png',
 			video: ''
 		},
 		{
@@ -249,7 +252,7 @@ export let DATA = {
 				// 	// icon: <Icons.globe className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/movies-self-analysis.png',
+			image: '/images/movies-self-analysis.png',
 			video: ''
 		},
 		{
@@ -271,7 +274,7 @@ export let DATA = {
 				// 	// icon: <Icons.globe className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/asian-hate.png',
+			image: '/images/asian-hate.png',
 			video: ''
 		},
 		{
@@ -280,8 +283,7 @@ export let DATA = {
 			dates: 'April 2022',
 			publisher:'University of Miami',
 			active: true,
-			description:
-				'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
+			description:'A visualization explores how Ukraine conflict will shake Europe\'s\ reliance on Russian crude oil supply.',
 			technologies: [
 				'Datawrapper',
 				'Adobe Illustrator',
@@ -295,7 +297,7 @@ export let DATA = {
 					// icon: <Icons.github className="size-3" />,
 				}
 			],
-			image: '/src/lib/data/images/the-biggest-weapon4.png',
+			image: '/images/the-biggest-weapon4.png',
 			video: ''
 			
 		}
@@ -307,7 +309,7 @@ export let DATA = {
 			dates: 'December 2023',
 			location: 'San Francisco, California',
 			description:'',
-			image: '/src/lib/data/images/anti-apec.JPG',
+			image: '/images/anti-apec.JPG',
 			// mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg',
 			links: [
 				{
@@ -324,7 +326,7 @@ export let DATA = {
 			dates: 'January 9, 2024',
 			location: 'Point Reyes, California',
 			description:'',
-			image: '/src/lib/data/images/dark-sky-written.JPG',
+			image: '/images/dark-sky-written.JPG',
 			// mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg',
 			links: [
 				{
@@ -357,7 +359,7 @@ export let DATA = {
 			location: 'San Mateo, California',
 			description:'',
 			// icon: "public",
-			image: '/src/lib/data/images/san-mateo-sheriff.png',
+			image: '/images/san-mateo-sheriff.png',
 			links: [
 				{
 					title: 'Multimedia',
@@ -372,7 +374,7 @@ export let DATA = {
 			dates: 'November 9, 2023',
 			location: 'Sacramento, California',
 			description:'',
-			image: '/src/lib/data/images/merideth-cooper.jpg',
+			image: '/images/merideth-cooper.jpg',
 			// mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg',
 			links: [
 				{
@@ -389,7 +391,7 @@ export let DATA = {
 			dates: 'Jan 7, 2022',
 			location: 'Miami, Florida',
 			description:'',
-			image: '/src/lib/data/images/back-on-screen.png',
+			image: '/images/back-on-screen.png',
 			links: [
 				// {
 				// 	title: 'News Reporting',
@@ -405,7 +407,7 @@ export let DATA = {
 			dates: 'September 2021',
 			location: 'Surfside, Florida',
 			description:'',
-			image: '/src/lib/data/images/three-month-surfside.png',
+			image: '/images/three-month-surfside.png',
 			// mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
 			links: [
 				// {
@@ -421,7 +423,7 @@ export let DATA = {
 			dates: 'September 2021',
 			location: 'Beijing, China',
 			description:'',
-			image: '/src/lib/data/images/china-metoo.jpg',
+			image: '/images/china-metoo.jpg',
 			// mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg',
 			links: [
 				{
@@ -455,7 +457,7 @@ export let DATA = {
 			// 		icon: Globe
 			// 	}
 			// ],
-			image: '/src/lib/data/images/words-by-maugham.png',
+			image: '/images/words-by-maugham.png',
 			video: ''
 		},
 		{
@@ -484,7 +486,7 @@ export let DATA = {
 				// 	// icon: <Icons.github className="size-3" />,
 				// }
 			],
-			image: '/src/lib/data/images/chicago-dead-zones.png',
+			image: '/images/chicago-dead-zones.png',
 			video: ''
 		},
 		{
@@ -506,7 +508,7 @@ export let DATA = {
 				// },
 				
 			],
-			image: '/src/lib/data/images/cool-it-nyc.png',
+			image: '/images/cool-it-nyc.png',
 			video: ''
 		},
 	],

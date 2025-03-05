@@ -30,10 +30,11 @@ const config = {
 		}),
 		paths: {
             base: process.env.NODE_ENV === 'production' ? '/sveltekit-app-test' : '',
-        }
+        },
 	},
 };
 
-config.paths = { base: process.argv.includes('dev') ? '' : process.env.BASE_PATH }
+// commented the below line in case it was conflicting with the base path setting in the kit object above
+// config.paths = { base: process.argv.includes('dev') ? '' : process.env.BASE_PATH } 
 
 export default config;

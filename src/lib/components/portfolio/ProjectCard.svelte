@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths'; // Import base path for image
+
 	import { marked } from 'marked';
 	import Badge from '../ui/badge/badge.svelte';
 
@@ -28,7 +30,7 @@
 			<video class="pointer-events-none mx-auto w-full object-cover object-top" src={video} autoplay loop muted></video>
 		{:else}
 			<div class="image-container relative">
-				<img class="w-full object-cover object-top" src={image} alt={title} />
+				<img class="w-full object-cover object-top" src="{base}{image}" alt={title} />
 				<div class="description-overlay text-[14px]">
 					{@html marked(description)}
 					<div class="px-2 pb-2">

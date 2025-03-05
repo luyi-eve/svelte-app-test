@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { mode } from 'mode-watcher';
@@ -25,11 +26,12 @@
 		direction = -1;
 		currentIndex = (currentIndex - 1 + videos.length) % videos.length; // Loops back to the last video
 	}
+
 </script>
 
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 	<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 

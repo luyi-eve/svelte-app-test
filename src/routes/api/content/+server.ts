@@ -1,3 +1,4 @@
+
 import { json } from '@sveltejs/kit';
 import type { Post } from '$lib/types';
 
@@ -28,3 +29,5 @@ export async function GET() {
 	const posts = await getPosts();
 	return json(posts);
 }
+
+export const prerender = true;
