@@ -1,10 +1,10 @@
-import { s as safe_not_equal, d as detach, o as destroy_each, e as append_hydration, c as insert_hydration, p as attr, q as set_style, u as head_selector, f as claim_element, j as claim_space, g as children, k as element, l as space, n as noop, v as get_svelte_dataset, h as claim_text, t as text } from "../chunks/DhipIWGX.js";
+import { s as safe_not_equal, d as detach, o as destroy_each, e as append_hydration, c as insert_hydration, p as attr, q as set_style, u as head_selector, f as claim_element, j as claim_space, g as children, k as element, l as space, n as noop, v as get_svelte_dataset } from "../chunks/DhipIWGX.js";
 import { S as SvelteComponent, i as init, d as destroy_component, t as transition_out, a as transition_in, c as check_outros, m as mount_component, b as claim_component, e as create_component, g as group_outros } from "../chunks/w1gIoQsl.js";
-import { D as DATA, B as BlurFade, e as ensure_array_like, P as ProjectCard } from "../chunks/Ed4Y6JXo.js";
+import { D as DATA, B as BlurFade, e as ensure_array_like, P as ProjectCard } from "../chunks/oXjN_W0T.js";
 function get_each_context(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[1] = list[i];
-  child_ctx[3] = i;
+  child_ctx[0] = list[i];
+  child_ctx[2] = i;
   return child_ctx;
 }
 function create_default_slot_2(ctx) {
@@ -43,39 +43,39 @@ function create_default_slot_1(ctx) {
     props: {
       href: (
         /*archive*/
-        ctx[1].href
+        ctx[0].href
       ),
       title: (
         /*archive*/
-        ctx[1].title
+        ctx[0].title
       ),
       publisher: (
         /*archive*/
-        ctx[1].publisher
+        ctx[0].publisher
       ),
       description: (
         /*archive*/
-        ctx[1].description
+        ctx[0].description
       ),
       dates: (
         /*archive*/
-        ctx[1].dates
+        ctx[0].dates
       ),
       tags: (
         /*archive*/
-        ctx[1].technologies
+        ctx[0].technologies
       ),
       image: (
         /*archive*/
-        ctx[1].image
+        ctx[0].image
       ),
       video: (
         /*archive*/
-        ctx[1].video
+        ctx[0].video
       ),
       links: (
         /*archive*/
-        ctx[1].links
+        ctx[0].links
       )
     }
   });
@@ -117,7 +117,7 @@ function create_each_block(ctx) {
   blurfade = new BlurFade({
     props: {
       delay: BLUR_FADE_DELAY * 1.5 + /*id*/
-      ctx[3] * 0.05,
+      ctx[2] * 0.05,
       $$slots: { default: [create_default_slot_1] },
       $$scope: { ctx }
     }
@@ -136,7 +136,7 @@ function create_each_block(ctx) {
     p(ctx2, dirty) {
       const blurfade_changes = {};
       if (dirty & /*$$scope*/
-      16) {
+      8) {
         blurfade_changes.$$scope = { dirty, ctx: ctx2 };
       }
       blurfade.$set(blurfade_changes);
@@ -157,48 +157,23 @@ function create_each_block(ctx) {
 }
 function create_default_slot(ctx) {
   let div;
-  let p;
-  let span;
-  let a;
-  let t;
+  let textContent = `<p class="text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] leading-relaxed svelte-j9rvhw"><span class="font-semibold cursor-pointer custom-underline svelte-j9rvhw" style="font-family:Cairo Play, serif"><a href="/">←  Eve (Yi) Lu</a></span></p>`;
   return {
     c() {
       div = element("div");
-      p = element("p");
-      span = element("span");
-      a = element("a");
-      t = text("←  Eve (Yi) Lu");
+      div.innerHTML = textContent;
       this.h();
     },
     l(nodes) {
-      div = claim_element(nodes, "DIV", { class: true });
-      var div_nodes = children(div);
-      p = claim_element(div_nodes, "P", { class: true });
-      var p_nodes = children(p);
-      span = claim_element(p_nodes, "SPAN", { class: true, style: true });
-      var span_nodes = children(span);
-      a = claim_element(span_nodes, "A", { href: true });
-      var a_nodes = children(a);
-      t = claim_text(a_nodes, "←  Eve (Yi) Lu");
-      a_nodes.forEach(detach);
-      span_nodes.forEach(detach);
-      p_nodes.forEach(detach);
-      div_nodes.forEach(detach);
+      div = claim_element(nodes, "DIV", { class: true, ["data-svelte-h"]: true });
+      if (get_svelte_dataset(div) !== "svelte-l5afj0") div.innerHTML = textContent;
       this.h();
     },
     h() {
-      attr(a, "href", base);
-      attr(span, "class", "font-semibold cursor-pointer custom-underline svelte-j9rvhw");
-      set_style(span, "font-family", "Cairo Play, serif");
-      attr(p, "class", "text-[10px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] leading-relaxed svelte-j9rvhw");
       attr(div, "class", "flex flex-col space-y-4 text-center");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
-      append_hydration(div, p);
-      append_hydration(p, span);
-      append_hydration(span, a);
-      append_hydration(a, t);
     },
     p: noop,
     d(detaching) {
@@ -425,7 +400,7 @@ function create_fragment(ctx) {
     p(ctx2, [dirty]) {
       const blurfade0_changes = {};
       if (dirty & /*$$scope*/
-      16) {
+      8) {
         blurfade0_changes.$$scope = { dirty, ctx: ctx2 };
       }
       blurfade0.$set(blurfade0_changes);
@@ -453,7 +428,7 @@ function create_fragment(ctx) {
       }
       const blurfade1_changes = {};
       if (dirty & /*$$scope*/
-      16) {
+      8) {
         blurfade1_changes.$$scope = { dirty, ctx: ctx2 };
       }
       blurfade1.$set(blurfade1_changes);
@@ -507,20 +482,13 @@ function create_fragment(ctx) {
   };
 }
 let BLUR_FADE_DELAY = 0.04;
-function instance($$self, $$props, $$invalidate) {
-  let { data } = $$props;
-  $$self.$$set = ($$props2) => {
-    if ("data" in $$props2) $$invalidate(0, data = $$props2.data);
-  };
-  return [data];
-}
 class Page extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance, create_fragment, safe_not_equal, { data: 0 });
+    init(this, options, null, create_fragment, safe_not_equal, {});
   }
 }
 export {
   Page as component
 };
-//# sourceMappingURL=4.BFmw4zhH.js.map
+//# sourceMappingURL=3.DAjRSk0y.js.map
