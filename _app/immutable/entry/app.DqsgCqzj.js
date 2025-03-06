@@ -1,35 +1,27 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["../nodes/0.DlP-3htX.js","../chunks/DhipIWGX.js","../chunks/w1gIoQsl.js","../chunks/C_i4H-yG.js","../chunks/BvUVvXmz.js","../chunks/OenZPaBa.js","../assets/0.BvscxVh6.css","../nodes/1.D5Q5kW__.js","../chunks/CyYttQI9.js","../chunks/CnlFO3zh.js","../nodes/2.LWVkykqw.js","../chunks/B9us-x47.js","../assets/resume.BItvdbyi.css","../assets/2.cuA1Xo3V.css","../nodes/3.DjpWUQlv.js","../assets/3.BTIyq_Jh.css","../nodes/4.2tzteWgN.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_app/immutable/nodes/0.DlP-3htX.js","_app/immutable/chunks/DhipIWGX.js","_app/immutable/chunks/w1gIoQsl.js","_app/immutable/chunks/C_i4H-yG.js","_app/immutable/chunks/BvUVvXmz.js","_app/immutable/chunks/OenZPaBa.js","_app/immutable/assets/0.BvscxVh6.css","_app/immutable/nodes/1.BadQLTlH.js","_app/immutable/chunks/Bciz9OkH.js","_app/immutable/chunks/Bfva0ycC.js","_app/immutable/nodes/2.JbEWwvsK.js","_app/immutable/chunks/CIrq-BIi.js","_app/immutable/assets/resume.BItvdbyi.css","_app/immutable/assets/2.cuA1Xo3V.css","_app/immutable/nodes/3.B3QpW4Yi.js","_app/immutable/assets/3.BTIyq_Jh.css","_app/immutable/nodes/4.DQMzZ5w8.js"])))=>i.map(i=>d[i]);
 import { s as safe_not_equal, d as detach, c as insert_hydration, j as claim_space, x as empty, l as space, y as afterUpdate, z as onMount, A as tick, B as construct_svelte_component, p as attr, q as set_style, f as claim_element, g as children, k as element, C as binding_callbacks, b as set_data, h as claim_text, t as text } from "../chunks/DhipIWGX.js";
 import { S as SvelteComponent, i as init, t as transition_out, a as transition_in, g as group_outros, c as check_outros, d as destroy_component, e as create_component, m as mount_component, b as claim_component } from "../chunks/w1gIoQsl.js";
 const scriptRel = "modulepreload";
-const assetsURL = function(dep, importerUrl) {
-  return new URL(dep, importerUrl).href;
+const assetsURL = function(dep) {
+  return "/svelte-app-test/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
   let promise = Promise.resolve();
   if (deps && deps.length > 0) {
-    const links = document.getElementsByTagName("link");
+    document.getElementsByTagName("link");
     const cspNonceMeta = document.querySelector(
       "meta[property=csp-nonce]"
     );
     const cspNonce = (cspNonceMeta == null ? void 0 : cspNonceMeta.nonce) || (cspNonceMeta == null ? void 0 : cspNonceMeta.getAttribute("nonce"));
     promise = Promise.allSettled(
       deps.map((dep) => {
-        dep = assetsURL(dep, importerUrl);
+        dep = assetsURL(dep);
         if (dep in seen) return;
         seen[dep] = true;
         const isCss = dep.endsWith(".css");
         const cssSelector = isCss ? '[rel="stylesheet"]' : "";
-        const isBaseRelative = !!importerUrl;
-        if (isBaseRelative) {
-          for (let i = links.length - 1; i >= 0; i--) {
-            const link2 = links[i];
-            if (link2.href === dep && (!isCss || link2.rel === "stylesheet")) {
-              return;
-            }
-          }
-        } else if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
+        if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
           return;
         }
         const link = document.createElement("link");
@@ -626,11 +618,11 @@ class Root extends SvelteComponent {
   }
 }
 const nodes = [
-  () => __vitePreload(() => import("../nodes/0.DlP-3htX.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0, import.meta.url),
-  () => __vitePreload(() => import("../nodes/1.D5Q5kW__.js"), true ? __vite__mapDeps([7,1,2,8,4,9]) : void 0, import.meta.url),
-  () => __vitePreload(() => import("../nodes/2.LWVkykqw.js"), true ? __vite__mapDeps([10,1,2,11,5,4,9,12,3,13]) : void 0, import.meta.url),
-  () => __vitePreload(() => import("../nodes/3.DjpWUQlv.js"), true ? __vite__mapDeps([14,1,2,11,5,4,9,12,15]) : void 0, import.meta.url),
-  () => __vitePreload(() => import("../nodes/4.2tzteWgN.js"), true ? __vite__mapDeps([16,1,2,11,5,4,9,12,15]) : void 0, import.meta.url)
+  () => __vitePreload(() => import("../nodes/0.DlP-3htX.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0),
+  () => __vitePreload(() => import("../nodes/1.BadQLTlH.js"), true ? __vite__mapDeps([7,1,2,8,4,9]) : void 0),
+  () => __vitePreload(() => import("../nodes/2.JbEWwvsK.js"), true ? __vite__mapDeps([10,1,2,11,5,4,9,12,3,13]) : void 0),
+  () => __vitePreload(() => import("../nodes/3.B3QpW4Yi.js"), true ? __vite__mapDeps([14,1,2,11,5,4,9,12,15]) : void 0),
+  () => __vitePreload(() => import("../nodes/4.DQMzZ5w8.js"), true ? __vite__mapDeps([16,1,2,11,5,4,9,12,15]) : void 0)
 ];
 const server_loads = [];
 const dictionary = {
@@ -660,4 +652,4 @@ export {
   Root as root,
   server_loads
 };
-//# sourceMappingURL=app.CEG9xS4u.js.map
+//# sourceMappingURL=app.DqsgCqzj.js.map
